@@ -1,5 +1,7 @@
 import React from 'react';
 import './SingleMeal.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const SingleMeal = ({ meal, cartHandler  }) => {
     // console.log(meal);
@@ -14,7 +16,7 @@ const SingleMeal = ({ meal, cartHandler  }) => {
                 <p>Tradition: {strArea}</p>
                 <p>Introduction: {strInstructions.length >50 ? strInstructions.slice(0,50) +'....':strInstructions}</p>
             </div>
-            <button className='cart-button' onClick={() => cartHandler(meal)}>Add to Cart</button>
+            <button className='cart-button' onClick={() => cartHandler(meal)}> <span>Add to Cart</span> <span className='font-awsome'><FontAwesomeIcon icon={faShoppingCart} /> </span> </button>  
 
             
        </div>

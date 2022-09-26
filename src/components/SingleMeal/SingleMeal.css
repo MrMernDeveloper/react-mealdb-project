@@ -1,6 +1,6 @@
 .single-meal{
     width: 300px;
-    height: 500px;
+    height: 480px;
     background-color: rgba(128, 128, 128, 0.13);
     border-radius: 8px;
    position: relative;
@@ -37,4 +37,7 @@ padding:0 20px;
 
 .cart-button:hover{
     background-color: orange;
+}
+.font-awsome{
+    margin-left: 5px;
 }
