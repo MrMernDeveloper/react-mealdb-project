@@ -1,8 +1,8 @@
 import React from 'react';
 import './SingleMeal.css'
 
-const SingleMeal = ({ meal }) => {
-    console.log(meal);
+const SingleMeal = ({ meal, cartHandler  }) => {
+    // console.log(meal);
     const { strMeal, strMealThumb, strCategory, strInstructions, strArea
  } = meal;
     return (
@@ -14,7 +14,7 @@ const SingleMeal = ({ meal }) => {
                 <p>Tradition: {strArea}</p>
                 <p>Introduction: {strInstructions.length >50 ? strInstructions.slice(0,50) +'....':strInstructions}</p>
             </div>
-            <button className='cart-button'>Add to Cart</button>
+            <button className='cart-button' onClick={() => cartHandler(meal)}>Add to Cart</button>
 
             
        </div>

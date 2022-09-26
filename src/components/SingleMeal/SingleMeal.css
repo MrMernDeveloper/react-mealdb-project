@@ -17,7 +17,7 @@
     margin-bottom: 0px;
 }
 .product-details {
-padding-left: 20px;
+padding:0 20px;
 }
 .product-details p{
     margin-bottom: 0px;
@@ -29,7 +29,7 @@ padding-left: 20px;
     bottom: 0;
     height: auto;
     width: 100%;
-    height: 40px;
+    height: 45px;
     border-radius: 3px;
     border: 0;
     background-color: rgba(247, 146, 13, 0.671);
